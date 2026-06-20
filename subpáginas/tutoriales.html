@@ -3,69 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f7f9fc;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .error-container {
-            max-width: 500px;
-            padding: 40px 20px;
-        }
-        .error-code {
-            font-size: 120px;
-            font-weight: 800;
-            color: #4a90e2;
-            line-height: 1;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 24px;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-        p {
-            font-size: 16px;
-            color: #7f8c8d;
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-        .btn-home {
-            display: inline-block;
-            text-decoration: none;
-            background-color: #4a90e2;
-            color: #fff;
-            padding: 12px 30px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 25px;
-            transition: background-color 0.3s ease;
-        }
-        .btn-home:hover {
-            background-color: #357abd;
-        }
-    </style>
+    <title>Resúmenes Trinity - Tutoriales</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/logo-favicon.png" type="image/x-icon">
 </head>
 <body>
+    <nav class="top-nav">
+        <a href="/"><img src="../images/logo-blanco.png" alt=""></a>
 
-    <div class="error-container">
-        <div class="error-code">404</div>
-        <h1>Oops! Page Not Found</h1>
-        <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
-        <a href="../index.html" class="btn-home">Go Back Home</a>
-    </div>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="resumenes.html">Resumenes</a></li>
+            <li><a href="tutoriales.html">Tutoriales</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img src="../images/logo-blanco.png" alt="">
+        <h1>Tutoriales</h1>
+    </header>
+
+    <section class="resumenes">
+        <div class="resumenes-container">
+            <article class="resumen">
+                <h4>Documento de Google</h4>
+                <h3>Kit para la OEA</h3>
+                <p>Guía completa de cómo participar en el simulacro de la OEA - desde cordialidades hasta el formato del discurso</p>
+
+                <hr>
+
+                <div class="resumen-info">
+                    <p>Last update - 2024</p>
+                    <a href="https://docs.google.com/document/d/13DZpq_PVc3fWw5bC_2VTjIuvzOidRcnPP8gtHs1J42A/edit?usp=sharing">Ver tutorial</a>
+                </div>
+
+            </article>
+
+            <article class="resumen">
+                <h4>Documento de Google</h4>
+
+                <h3>Las mejores IAs para estudiar</h3>
+                <p>Documento en donde se exploran las IAs que usamos para maximizar nuestro estudio.</p>
+
+                <hr>
+
+                <div class="resumen-info">
+                    <p>Last update - 2025</p>
+                    <a href="https://docs.google.com/document/d/1c5Toc8JTfUKI1IvD75CwuSIYirxW0AQUeqvOMcv0zNg/edit?usp=sharing">Ver tutorial</a>
+                </div>
+
+            </article>
+
+            <article class="resumen">
+                <h4>Documento de Google</h4>
+
+                <h3>Kit para la OEA</h3>
+                <p>Guía completa de cómo participar en el simulacro de la OEA - desde cordialidades hasta el formato del discurso</p>
+
+                <hr>
+
+                <div class="resumen-info">
+                    <p>Last update - 2024</p>
+                    <a href="https://docs.google.com/document/d/13DZpq_PVc3fWw5bC_2VTjIuvzOidRcnPP8gtHs1J42A/edit?usp=sharing">Ver tutorial</a>
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo-blanco.png" alt="Resúmenes Trinity">
+                <p>Material académico organizado para estudiantes.</p>
+            </div>
+            <nav class="footer-links">
+                <a href="/">Inicio</a>
+                <a href="subpáginas/resumenes.html">Resúmenes</a>
+                <a href="subpáginas/tutoriales.html">Tutoriales</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Resúmenes Trinity. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
