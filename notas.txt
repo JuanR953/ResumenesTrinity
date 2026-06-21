@@ -1,5 +1,0 @@
-## Código para salvaguardar los cambios hechos en el Codespace en el Repository
-
-git add .
-git commit -m "Update website"
-git push
