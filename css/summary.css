@@ -1,0 +1,265 @@
+/* ========================================
+   MAIN
+======================================== */
+
+main{
+    padding-top: 5rem;
+    max-width: var(--container);
+    margin: auto;
+
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.content-header{
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.content-header img {
+    width: 50vw;
+}
+
+.content-icon {
+    width: 90px;
+    height: 90px;
+    fill: white;
+
+    padding: 1.5rem;
+    border-radius: 50%;
+
+    background: var(--gradient);
+    box-shadow: var(--shadow);
+}
+
+.header-text h1{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.header-text p {
+    max-width: 500px;
+    margin:auto;
+
+    color:#666;
+    line-height:1.8;
+}
+
+/* ========================================
+   CARDS
+======================================== */
+
+.resumen2 {
+    margin: 0;
+    padding: 0;
+}
+
+.resumenes{
+
+    margin:auto;
+    padding:0 2rem 5rem;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+}
+
+.resumen{
+    background:white;
+    border-radius:var(--radius);
+    padding:2rem;
+
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+
+    box-shadow:var(--shadow);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+
+
+.resumen:hover{
+    transform:translateY(-2px);
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+}
+
+.resumen h3{
+    font-size:1.5rem;
+    color:var(--primary);
+}
+
+.resumen hr{
+    border:none;
+    height:1px;
+    background:#e7e7e7;
+}
+
+/* ========================================
+   BADGES
+======================================== */
+
+.resumen h4{
+    align-self:flex-start;
+
+    font-size:.8rem;
+    font-weight:600;
+
+    padding:.45rem .9rem;
+
+    border-radius:999px;
+
+    color:white;
+}
+
+.blue-bg{
+    background:#2563eb;
+}
+
+.red-bg{
+    background:#dc2626;
+}
+
+.green-bg {
+    background: #0c9e2b;
+}
+
+.orange-bg {
+    background: #febd3c;
+}
+
+/* ========================================
+   FOOTER CARD
+======================================== */
+
+.resumen-info{
+    margin-top:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:1rem;
+}
+
+.resumen-info p{
+    color:#777;
+    font-size:.9rem;
+}
+
+.resumen-info a{
+    text-decoration:none;
+
+    background: var(--button);
+    color:black;
+
+    padding:.75rem 1.2rem;
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.resumen-info a:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+
+.summary-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-left: 6vw;
+}
+
+.summary-header svg {
+    width: 90px;
+    background-color: var(--color);
+    fill: white;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.summary-header h3 {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+}
+
+.divisor {
+    display: none;
+    margin-bottom: 3rem;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (min-width:768px){
+
+    .content-header{
+        flex-direction:row;
+        text-align:left;
+        align-items:center;
+    }
+
+    .header-text{
+        flex:1;
+    }
+
+    .content-icon{
+        width:110px;
+        height:110px;
+        flex-shrink:0;
+    }
+
+    .divisor {
+        display: block;
+    }
+
+}
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width:1024px){
+
+    .content-header {
+        padding:5rem 2rem;
+    }
+
+    .content-header img {
+        width: 15vw;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-text p {
+        max-width: none;
+        text-align: left;
+        padding-right: 3rem;
+    }
+
+    .resumen{
+        padding:2.2rem;
+    }
+
+}
