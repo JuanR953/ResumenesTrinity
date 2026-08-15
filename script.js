@@ -105,11 +105,11 @@ options.forEach(option => {
                 break;
 
             case "tutoriales":
-                window.location.href = "/tutoriales/index.html";
+                window.location.href = "tutoriales/index.html";
                 break;
 
             case "igcse":
-                window.location.href = "/igcse";
+                window.location.href = "igcse/index.html";
                 break;
 
         }
@@ -117,7 +117,6 @@ options.forEach(option => {
     });
 
 });
-
 
 // ======================
 // Selección de curso
