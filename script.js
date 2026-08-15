@@ -151,7 +151,7 @@ continueBtn.addEventListener("click", () => {
 
     if (!selectedCourse) return;
 
-    window.location.href = `/resumenes/${selectedCourse}.html`;
+    window.location.href = `resumenes/${selectedCourse}.html`;
 
 });
 
